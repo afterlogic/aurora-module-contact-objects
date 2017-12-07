@@ -19,13 +19,16 @@ namespace Aurora\Modules\ContactObjects\Classes;
 class Contact extends \Aurora\System\EAV\Entity
 {
 	protected $aStaticMap = [
-		'Full Name' => ['string', ''],
-		'Address' => ['string', ''],
-		'Phone' => ['string', ''],
-		'Facebook' => ['string', ''],
-		'LinkedIn' => ['string', ''],
-		'Instagram' => ['string', ''],
-		'CustomerUUID' => ['string', '']
+		'Storage'		=> ['string', ''],
+		'FullName'		=> ['string', ''],
+		'Address'		=> ['string', ''],
+		'Phone'		=> ['string', ''],
+		'Email'		=> ['string', ''],
+		'Facebook'		=> ['string', ''],
+		'LinkedIn'		=> ['string', ''],
+		'Instagram'		=> ['string', ''],
+		'CustomerUUID'	=> ['string', ''],
+		'CompanyUUID'	=> ['string', '']
 	];
 
 	public function toResponseArray()
