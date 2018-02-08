@@ -20,7 +20,7 @@ class Contact extends \Aurora\System\EAV\Entity
 {
 	protected $aStaticMap = [
 		'Storage'		=> ['string', ''],
-		'FullName'		=> ['string', ''],
+		'FullName'		=> ['string', '', true],
 		'Address'		=> ['string', ''],
 		'Phone'			=> ['string', ''],
 		'Email'			=> ['string', ''],

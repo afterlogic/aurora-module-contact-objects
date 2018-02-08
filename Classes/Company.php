@@ -19,7 +19,7 @@ namespace Aurora\Modules\ContactObjects\Classes;
 class Company extends \Aurora\System\EAV\Entity
 {
 	protected $aStaticMap = [
-		'Title'			=> ['string', ''],
+		'Title'			=> ['string', '', true],
 		'Description'	=> ['string', ''],
 		'Address'		=> ['string', ''],
 		'Phone'		=> ['string', ''],
