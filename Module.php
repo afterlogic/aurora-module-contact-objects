@@ -16,4 +16,5 @@ namespace Aurora\Modules\ContactObjects;
  */
 class Module extends \Aurora\System\Module\AbstractModule
 {
+    public function init() {}
 }
