@@ -17,19 +17,19 @@ namespace Aurora\Modules\ContactObjects\Classes;
  */
 class Company extends \Aurora\System\EAV\Entity
 {
-	protected $aStaticMap = [
-		'Title'			=> ['string', '', true],
-		'Description'	=> ['string', ''],
-		'Address'		=> ['string', ''],
-		'Phone'		=> ['string', ''],
-		'Website'		=> ['string', ''],
-		'CustomerUUID'	=> ['string', '']
-	];
+    protected $aStaticMap = [
+        'Title'			=> ['string', '', true],
+        'Description'	=> ['string', ''],
+        'Address'		=> ['string', ''],
+        'Phone'		=> ['string', ''],
+        'Website'		=> ['string', ''],
+        'CustomerUUID'	=> ['string', '']
+    ];
 
-	public function toResponseArray()
-	{
-		$aResponse = parent::toResponseArray();
-		$aResponse['CompanyId'] = $this->EntityId;
-		return $aResponse;
-	}
+    public function toResponseArray()
+    {
+        $aResponse = parent::toResponseArray();
+        $aResponse['CompanyId'] = $this->EntityId;
+        return $aResponse;
+    }
 }

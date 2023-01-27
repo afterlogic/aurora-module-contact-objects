@@ -17,23 +17,23 @@ namespace Aurora\Modules\ContactObjects\Classes;
  */
 class Contact extends \Aurora\System\EAV\Entity
 {
-	protected $aStaticMap = [
-		'Storage'		=> ['string', ''],
-		'FullName'		=> ['string', '', true],
-		'Address'		=> ['string', ''],
-		'Phone'			=> ['string', ''],
-		'Email'			=> ['string', ''],
-		'Facebook'		=> ['string', ''],
-		'LinkedIn'		=> ['string', ''],
-		'Instagram'		=> ['string', ''],
-		'CustomerUUID'	=> ['string', ''],
-		'CompanyUUID'	=> ['string', '']
-	];
+    protected $aStaticMap = [
+        'Storage'		=> ['string', ''],
+        'FullName'		=> ['string', '', true],
+        'Address'		=> ['string', ''],
+        'Phone'			=> ['string', ''],
+        'Email'			=> ['string', ''],
+        'Facebook'		=> ['string', ''],
+        'LinkedIn'		=> ['string', ''],
+        'Instagram'		=> ['string', ''],
+        'CustomerUUID'	=> ['string', ''],
+        'CompanyUUID'	=> ['string', '']
+    ];
 
-	public function toResponseArray()
-	{
-		$aResponse = parent::toResponseArray();
-		$aResponse['ContactId'] = $this->EntityId;
-		return $aResponse;
-	}
+    public function toResponseArray()
+    {
+        $aResponse = parent::toResponseArray();
+        $aResponse['ContactId'] = $this->EntityId;
+        return $aResponse;
+    }
 }
