@@ -19,4 +19,13 @@ class Module extends \Aurora\System\Module\AbstractModule
     public function init()
     {
     }
+
+    /**
+     *
+     * @return Module
+     */
+    public static function Decorator()
+    {
+        return parent::Decorator();
+    }
 }
