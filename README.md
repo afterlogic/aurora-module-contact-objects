@@ -1,4 +1,5 @@
 # aurora-module-contact-objects
+This module is deprecated.
 
 # Development
 This repository has a pre-commit hook. To make it work you need to configure git to use the particular hooks folder.
